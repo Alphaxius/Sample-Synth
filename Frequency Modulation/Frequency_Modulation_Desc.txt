@@ -1,0 +1,46 @@
+This is a simple circuit which derives a 1 - 4.5 volt output from two -5 to 5
+volt outputs. The formula below describes the nominal relationship.
+
+   Vout = 0.25 * Vinc + 0.1 * Vinf + 2.75
+
+Where Vinc is the coarse frequency control input and Vinf is the fine
+frequency control input.
+
+The output will be fed into a 74LS624 voltage controlled oscillator.
+
+This is achieved in two stages. 
+
+
+
+The first stage is a filter and sum inverting amplifier.
+
+The filters are simple low pass filters with nominal cutoff frequencies 20Hz
+and 100Hz for the coarse input and fine input respectively.
+
+The summer has gains -1.25 V/V and -0.5 V/V for the coarse and fine inputs
+respectively.
+
+There is an additional feedback capacitor to better the filter performance.
+
+
+
+The second stage is a simple inverting amplifier with shift.
+
+This is a trivial design.
+
+
+
+Parts notes:
+
+The output is limited to 4.75 volts with a 1N750 zener diode.
+
+The 200k resistor could be 2 100k resistors in series to reduce costs by
+several tenths of cents!
+
+The op-amps have not yet been chosen, but don't matter too much, since
+the output does not need to get to either rail, nor does noise matter all
+that much. If during empirical testing, noise does become a problem, another
+capacitor could be placed on the output node to stabilize the output voltage.
+
+There should also be bypass capacitor(s) on the op amp chip in the practical
+design.
