@@ -44,3 +44,5 @@ capacitor could be placed on the output node to stabilize the output voltage.
 
 There should also be bypass capacitor(s) on the op amp chip in the practical
 design.
+
+Additional components are needed for tuning and biasing. These should be included in the full schematic.
