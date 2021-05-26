@@ -573,4 +573,6 @@ Wire Wire Line
 	2650 2850 3000 2850
 Wire Wire Line
 	3150 3950 3350 3950
+Text Notes 4650 3600 0    50   ~ 0
+U1 = MCP6007\n or LM2904
 $EndSCHEMATC
