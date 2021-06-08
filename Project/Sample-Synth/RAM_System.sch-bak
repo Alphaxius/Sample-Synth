@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,290 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L 4xxx:4017 U4
+U 1 1 60AE7B96
+P 4850 3700
+F 0 "U4" H 4850 4681 50  0000 C CNN
+F 1 "4017" H 4850 4590 50  0000 C CNN
+F 2 "" H 4850 3700 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf" H 4850 3700 50  0001 C CNN
+	1    4850 3700
+	1    0    0    -1  
+$EndComp
+Text HLabel 4800 4650 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4800 4650 4850 4650
+Wire Wire Line
+	4850 4650 4850 4600
+NoConn ~ 5350 4300
+Text HLabel 4350 3300 0    50   Input ~ 0
+GND
+Text HLabel 4350 3500 0    50   Input ~ 0
+3V3
+Text HLabel 4350 3200 0    50   Input ~ 0
+CLK
+Text Notes 4400 2600 0    50   ~ 0
+U1 is an LS or HCT series
+Text HLabel 4450 2750 0    50   Input ~ 0
+3V3
+$Comp
+L Memory_RAM:7130 U3
+U 1 1 60B3787A
+P 6150 3650
+F 0 "U3" H 6150 3027 50  0000 C CNN
+F 1 "7130" H 6150 2936 50  0000 C CNN
+F 2 "Package_DIP:DIP-48_W15.24mm_Socket_LongPads" H 6100 3000 50  0001 C CNN
+F 3 "" H 6100 3550 50  0001 C CNN
+	1    6150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_RAM:7130 U3
+U 2 1 60B3976C
+P 9850 3700
+F 0 "U3" H 9850 3077 50  0000 C CNN
+F 1 "7130" H 9850 2986 50  0000 C CNN
+F 2 "Package_DIP:DIP-48_W15.24mm_Socket_LongPads" H 9800 3050 50  0001 C CNN
+F 3 "" H 9800 3600 50  0001 C CNN
+	2    9850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_RAM:7130 U3
+U 3 1 60B3AA66
+P 2500 3650
+F 0 "U3" H 2728 3596 50  0000 L CNN
+F 1 "7130" H 2728 3505 50  0000 L CNN
+F 2 "Package_DIP:DIP-48_W15.24mm_Socket_LongPads" H 2450 3000 50  0001 C CNN
+F 3 "" H 2450 3550 50  0001 C CNN
+	3    2500 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3200 5500 3200
+Wire Wire Line
+	5350 3300 5500 3300
+Wire Wire Line
+	5350 3400 5500 3400
+Wire Wire Line
+	5350 3500 5500 3500
+Wire Wire Line
+	5350 3600 5500 3600
+Wire Wire Line
+	5350 3700 5500 3700
+Wire Wire Line
+	5350 3800 5500 3800
+Wire Wire Line
+	5350 3900 5500 3900
+Wire Wire Line
+	5350 4000 5500 4000
+Wire Wire Line
+	5350 4100 5500 4100
+$Comp
+L Device:C C?
+U 1 1 60B45FB5
+P 3850 3050
+F 0 "C?" H 3965 3096 50  0000 L CNN
+F 1 "1u" H 3965 3005 50  0000 L CNN
+F 2 "" H 3888 2900 50  0001 C CNN
+F 3 "~" H 3850 3050 50  0001 C CNN
+	1    3850 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60B468A3
+P 1750 3700
+F 0 "C?" H 1865 3746 50  0000 L CNN
+F 1 "1u" H 1865 3655 50  0000 L CNN
+F 2 "" H 1788 3550 50  0001 C CNN
+F 3 "~" H 1750 3700 50  0001 C CNN
+	1    1750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60B47156
+P 2100 3700
+F 0 "C?" H 2215 3746 50  0000 L CNN
+F 1 "10u" H 2215 3655 50  0000 L CNN
+F 2 "" H 2138 3550 50  0001 C CNN
+F 3 "~" H 2100 3700 50  0001 C CNN
+	1    2100 3700
+	1    0    0    -1  
+$EndComp
+Text HLabel 1550 3450 0    50   Input ~ 0
+3V3
+Text HLabel 1550 4050 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4450 2750 4550 2750
+Wire Wire Line
+	4550 2750 4550 2900
+Wire Wire Line
+	4550 2900 4850 2900
+Wire Wire Line
+	4550 2900 3850 2900
+Connection ~ 4550 2900
+Wire Wire Line
+	3850 3200 3850 3250
+Wire Wire Line
+	3850 3250 3800 3250
+Text HLabel 3800 3250 0    50   Input ~ 0
+GND
+Wire Wire Line
+	1550 3450 1750 3450
+Wire Wire Line
+	2650 3450 2650 3500
+Wire Wire Line
+	1750 3550 1750 3450
+Connection ~ 1750 3450
+Wire Wire Line
+	1750 3450 2100 3450
+Wire Wire Line
+	2100 3550 2100 3450
+Connection ~ 2100 3450
+Wire Wire Line
+	2100 3450 2650 3450
+Wire Wire Line
+	1550 4050 1750 4050
+Wire Wire Line
+	2550 4050 2550 4000
+Wire Wire Line
+	2100 3850 2100 4050
+Connection ~ 2100 4050
+Wire Wire Line
+	2100 4050 2550 4050
+Wire Wire Line
+	1750 3850 1750 4050
+Connection ~ 1750 4050
+Wire Wire Line
+	1750 4050 2100 4050
+Entry Wire Line
+	6900 3400 7000 3500
+Entry Wire Line
+	6900 3500 7000 3600
+Entry Wire Line
+	6900 3600 7000 3700
+Entry Wire Line
+	6900 3700 7000 3800
+Entry Wire Line
+	6900 3800 7000 3900
+Entry Wire Line
+	6900 3900 7000 4000
+Entry Wire Line
+	6900 4000 7000 4100
+Entry Wire Line
+	6900 4100 7000 4200
+Wire Wire Line
+	6800 3400 6900 3400
+Wire Wire Line
+	6800 3500 6900 3500
+Wire Wire Line
+	6800 3600 6900 3600
+Wire Wire Line
+	6800 3700 6900 3700
+Wire Wire Line
+	6800 3800 6900 3800
+Wire Wire Line
+	6800 3900 6900 3900
+Wire Wire Line
+	6800 4000 6900 4000
+Wire Wire Line
+	6800 4100 6900 4100
+Wire Bus Line
+	7000 4250 7100 4250
+Text HLabel 7100 4250 2    50   Output ~ 0
+OutToDAC
+Text Label 6800 3400 0    50   ~ 0
+D0
+Text Label 6800 3500 0    50   ~ 0
+D1
+Text Label 6800 3600 0    50   ~ 0
+D2
+Text Label 6800 3700 0    50   ~ 0
+D3
+Text Label 6800 3800 0    50   ~ 0
+D4
+Text Label 6800 3900 0    50   ~ 0
+D5
+Text Label 6800 4000 0    50   ~ 0
+D6
+Text Label 6800 4100 0    50   ~ 0
+D7
+$Comp
+L Device:R R?
+U 1 1 60BCE8CA
+P 6050 2650
+F 0 "R?" H 6120 2696 50  0000 L CNN
+F 1 "20k" H 6120 2605 50  0000 L CNN
+F 2 "" V 5980 2650 50  0001 C CNN
+F 3 "~" H 6050 2650 50  0001 C CNN
+	1    6050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60BCF50E
+P 9850 2750
+F 0 "R?" H 9920 2796 50  0000 L CNN
+F 1 "20k" H 9920 2705 50  0000 L CNN
+F 2 "" V 9780 2750 50  0001 C CNN
+F 3 "~" H 9850 2750 50  0001 C CNN
+	1    9850 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 2950 9850 2900
+Wire Wire Line
+	9850 2600 9850 2550
+Wire Wire Line
+	9850 2550 9800 2550
+Text HLabel 5950 2450 0    50   Input ~ 0
+3V3
+Text HLabel 9800 2550 0    50   Input ~ 0
+3V3
+Text HLabel 5900 2850 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6150 2800 6150 2900
+Wire Wire Line
+	6350 2900 6350 2850
+Wire Wire Line
+	6350 2850 5950 2850
+Wire Wire Line
+	5950 2850 5950 2900
+Connection ~ 5950 2850
+Wire Wire Line
+	5950 2850 5900 2850
+Wire Wire Line
+	6150 2800 6050 2800
+$Comp
+L Device:R R?
+U 1 1 60BDC100
+P 6350 2650
+F 0 "R?" H 6420 2696 50  0000 L CNN
+F 1 "20k" H 6420 2605 50  0000 L CNN
+F 2 "" V 6280 2650 50  0001 C CNN
+F 3 "~" H 6350 2650 50  0001 C CNN
+	1    6350 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2900 6250 2800
+Wire Wire Line
+	6250 2800 6350 2800
+Wire Wire Line
+	6350 2500 6350 2450
+Wire Wire Line
+	6350 2450 6050 2450
+Wire Wire Line
+	6050 2450 6050 2500
+Wire Bus Line
+	7000 3500 7000 4250
+Connection ~ 6050 2450
+Wire Wire Line
+	6050 2450 5950 2450
 $EndSCHEMATC
